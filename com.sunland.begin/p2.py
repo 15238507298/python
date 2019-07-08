@@ -25,7 +25,7 @@ while True:
 
         elif ev.type == pygame.KEYDOWN:
             if ev.key == pygame.K_UP:
-                m_y = -(m_y**2)
+                m_y = -(m_y**21)
                 if bool: bool = False
             elif ev.key == pygame.K_DOWN:
                 m_y = m_y**2
