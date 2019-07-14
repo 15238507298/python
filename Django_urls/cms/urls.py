@@ -1,11 +1,11 @@
 from django.urls import path
 
-
 from . import views
 
-urlpatterns = {
+app_name = 'cms'
 
-    path('index', views.index),
-    path('login', views.login)
-}
+urlpatterns = [
+    path('', views.index, name='index'),
+    path('/login/', views.login, name='login')
+]
 
