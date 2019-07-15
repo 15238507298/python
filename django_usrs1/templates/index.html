@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+<p>书店首页</p>
+{#{% if age < 18 %}#}
+{#    <p>{{ name }}年龄未成年</p>#}
+{#    {% elif age == 18 %}#}
+{#      <p>{{ name }}年龄刚成年</p>#}
+{#    {% else%}#}
+{#  <p>{{ name }}年龄超过18了，已经成年了</p>#}
+{#{% endif %}#}
+
+<ul>
+{% for hero in heros %}
+    {% if forloop.first %}  <!--首次循环-->
+        <li style="background: #00bf00">
+    {% elif forloop.last%}
+        <li style="background: #0e2231">
+    {% else %}
+        <li>
+    {% endif %}
+{{ forloop.counter }}.{{ hero }}</li>
+    {% empty %}
+    <p style="background: pink">英雄无排名</p>
+{% endfor %}
+</ul>
+</body>
+</html>
+
+
