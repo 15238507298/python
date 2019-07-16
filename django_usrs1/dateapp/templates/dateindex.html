@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>date_index</title>
+</head>
+<style>
+    p{
+        background: #00bf00;
+        padding: 5px;
+    }
+</style>
+<body>
+
+
+<p>today1|date:'Y-m-d h:i:s' = {{ today1|date:'Y-m-d h:i:s' }}</p>
+<p id="id1">'1'add:'2'={{ '1'|add:'2' }}</p>
+<p id="id2">var1|add:var2 = {{ var1|add:var2 }}</p>
+<p class="cn">{{ 'hello   world'|cut:' ' }}</p>
+</body>
+</html>

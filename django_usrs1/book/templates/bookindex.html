@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>book_index</title>
+</head>
+<style>
+ .nav{
+     overflow: hidden;
+ }
+    .nav li{
+        float: left;
+        list-style: none;
+        padding: 0 20px;
+    }
+</style>
+<body>
+<p>
+<ul class="nav">
+    <li><a href="{% url 'book:index' %}">书籍首页</a></li>
+    <li><a href="{% url 'book:book_detail' book_id='5' %}">书籍id</a></li>
+    <li><a href="{% url 'book:book_info' %}?book_id=3">get方式获取书籍信息</a></li>
+
+</ul>
+
+</p>
+</body>
+</html>

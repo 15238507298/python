@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>base_index</title>
+</head>
+<style>
+    tr,td{
+        border-collapse: collapse;
+        padding:50px;
+        border: 1px solid green;
+    }
+</style>
+<body>
+<table>
+    <tr>
+        <td>id</td>
+        <td>name</td>
+        <td>password</td>
+    </tr>
+    {% block content %}
+        <tr>
+        <td>1</td>
+        <td>abc</td>
+        <td>123456</td>
+    </tr>
+    {% endblock %}
+</table>
+
+</body>
+</html>
